@@ -3,45 +3,30 @@
     padding: 0;
     margin: 0;
     border: 0;
-    /*Очистка отступов*/
     }
-*,*:before,*:after{
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      /*изменения подсчета ширины блока для удобства верстки*/  
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-/*Убирается обводка в браузерах*/
-nav,footer,header,aside{display: block;}
-/*Теги делает блочными*/
-html,body{
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-/*Уравнивание шрифтов и элементов в браузерах и самовольное увеличение шрифта*/
-input,button,textarea{font-family: inherit;}
-/*Наследование тегами Форм наследование шрифтов*/
-
-input::-ms-clear{display: none}
-button{cursor: pointer;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img {
-    display: block;
-    width: 100%;
-    border-radius: 50%;
+*,*:before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
 /*Css clear*/
 
 body{
@@ -57,12 +42,9 @@ body{
     margin: 20px auto;
 }
 .main-info{
-    padding: 100px 271px 90px 90px;
+    padding: 100px 160px 90px 90px;
 }
-.about{
-    width: 400px;
-    height: 230px;
-}
+
 h2{
     line-height: 17px;
     font-weight: 700;
@@ -76,7 +58,6 @@ h1{
     padding-bottom: 24px;
 }
 .about-me{
-    width: 400px;
     line-height: 24px;
     color: #595959;
 }
@@ -86,9 +67,7 @@ h3{
     line-height: 26.82px;
     margin-bottom: 10px;
 }
-.projects{
-    width: 485px;
-}
+
 .projects, .education{
     margin-top: 40px;
 }
@@ -124,9 +103,6 @@ ol li::before{
 }
 .work-experience{
     margin-top: 50px;
-    width: 525px;
-
-    
 }
 h4{
     font-style: normal;
@@ -147,7 +123,7 @@ h4{
     line-height: 15px;
     color: #A8A8A8;
 }
-.company-1{
+.company-1, .company-2, .company-3, .company-4{
     margin-top: 20px;
     font-style: normal;
     font-weight: normal;
@@ -155,22 +131,7 @@ h4{
     line-height: 24px;
     color: #595959;
 }
-.company-2{
-    margin-top: 20px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-}
-.company-3{
-    margin-top: 20px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-}
+
 /*List style circle with custom parameters*/
 .work-experience li::before{
     content: "\2022"; 
@@ -197,14 +158,33 @@ h5{
 
 /*Side bar*/
 
-aside{
+.main-information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 90px 0;
     background-color: #1E2939;
-    width: 370px;
-    padding: 40px 0px;
 }
-.contacrs-section, .techskills-section, .softskills-section{
-    margin: 50px 0 0 40px;
+
+.main-photo {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.main-photo > img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.main-skills-sections, .contacrs-section{
+    margin-bottom: 50px;
+}
+
 .skills-title{
     font-style: normal;
     font-weight: 700;
@@ -212,23 +192,23 @@ aside{
     line-height: 27px;
     color: white;
 }
-/*Contects section*/
 
 .contacts-type{
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 24px;
     color: #FFFFFF;
     margin-right: 5px;
 }
 .contacts-link{
-    font-style: normal;
-    font-weight: normal;
     line-height: 24px;
     color: #FFFFFF;
     opacity: 0.5;
 }
-/*My skils*/
+
+.techskills-section {
+    padding-bottom: 50px;
+}
+
 .order-skills li::before{
     content: "\2022"; 
     color: #FB6D3A; 
