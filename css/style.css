@@ -58,6 +58,9 @@ h1{
     padding-bottom: 24px;
 }
 
+a:hover{
+    color: #2196f3;
+}
 .about{
     background-color: rgba(177, 196, 210, 0.6);
     width: 100%;
@@ -69,7 +72,7 @@ h1{
 
 .about-me{
     line-height: 24px;
-    color: #595959;
+    color: black;
 }
 h3{
     font-size: 22px;
@@ -87,7 +90,11 @@ h3{
     padding-top: 8px;
     line-height: 24px;
     list-style-position: inside; 
-    color: #595959;
+    color: black;
+}
+
+.order-projects li:not(:last-child) {
+    margin-bottom: 10px;
 }
 /*Ordered list with custom numbers*/
 ol{
@@ -107,12 +114,13 @@ ol li::before{
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: #595959;
-}
-.bracket{
-    font-weight: 700;
     color: black;
 }
+
+.project-span{
+margin-left: 27px;
+}
+
 .work-experience{
     margin-top: 50px;
     padding-left: 100px;
@@ -135,7 +143,7 @@ h4{
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
-    color: #A8A8A8;
+    color: black;
 }
 .company-1, .company-2, .company-3, .company-4{
     margin-top: 20px;
@@ -143,13 +151,13 @@ h4{
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: #595959;
+    color: black;
 }
 
 /*List style circle with custom parameters*/
 .work-experience li::before{
     content: "\2022"; 
-    color: #595959; 
+    color: black; 
     font-weight: bold; 
     display: inline-block; 
     width: 1em;
@@ -216,10 +224,9 @@ h5{
 .contacts-link{
     line-height: 24px;
     color: black;
-    opacity: 0.5;
 }
 
-.techskills-section {
+.techskills-section, .softskills-section {
     padding-bottom: 50px;
 }
 
