@@ -181,16 +181,15 @@ h5{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items:center;
     padding: 90px 0;
+    align-items: center;
+    /* padding-left: 150px; */
     background-color:  rgba(177, 196, 210, 0.6);
 }
 
 .main-photo {
     margin-bottom: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .main-photo > img {
@@ -200,8 +199,9 @@ h5{
     height: auto;
 }
 
-.main-skills-sections, .contacrs-section{
+.main-skills-sections, .contacts-section{
     margin-bottom: 50px;
+    text-align: left;
 }
 
 .skills-title{
@@ -225,6 +225,7 @@ h5{
 
 .techskills-section, .softskills-section {
     padding-bottom: 50px;
+    text-align: left;
 }
 
 .order-skills li::before{
